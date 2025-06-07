@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatou Singhateh Jula Travel Agency</title>
+    <style>
+        :root {
+            --sunset-orange: #FF7F50;
+            --golden-yellow: #FFD700;
+            --deep-blue: #003366;
+            --sand: #F5DEB3;
+            --wave-blue: #4682B4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, var(--deep-blue), var(--wave-blue));
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: url('https://i.imgur.com/aPaWytL.jpg') center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,51,102,0.4);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--golden-yellow);
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: -50px auto 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        h1, h2, h3 {
+            color: var(--deep-blue);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            border-bottom: 2px solid var(--golden-yellow);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: var(--golden-yellow);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            background: linear-gradient(to right, var(--sand), white);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 25px 0;
+            border-left: 5px solid var(--sunset-orange);
+        }
+        
+        .paypal-section {
+            background: var(--deep-blue);
+            padding: 30px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        .paypal-button {
+            margin: 20px auto;
+            max-width: 300px;
+        }
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .service-card {
+            flex: 1 1 250px;
+            background: white;
+            border: 1px solid var(--sand);
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-top: 3px solid var(--sunset-orange);
+        }
+        
+        footer {
+            background: var(--deep-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        a {
+            color: var(--wave-blue);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: var(--sunset-orange);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                height: 200px;
+            }
+            
+            .container {
+                margin: -30px 15px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://i.imgur.com/aPaWytL.jpg" alt="Travel Agency Logo" class="logo">
+            <h1>Fatou Singhateh Jula Travel Agency</h1>
+            <p class="tagline">Creating unforgettable journeys under golden sunsets</p>
+        </div>
+    </header>
 
+    <div class="container">
+        <div class="main-content">
+            <h2>About My Travel Consultancy</h2>
+            <p>Welcome to Fatou Singhateh Jula Travel Agency, your premier travel consultancy based in Wirral, Merseyside, England. I specialize in crafting personalized travel experiences that capture the magic of golden sunsets and ocean breezes.</p>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong> Wirral, Merseyside, England</p>
+                <p><strong>Phone:</strong> <a href="tel:+447360251784">+44 7360 251784</a></p>
+                <p><strong>Email:</strong> <a href="mailto:fatousinghs@gmail.com">fatousinghs@gmail.com</a></p>
+            </div>
+            
+            <h2>My Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Custom Itineraries</h3>
+                    <p>Tailored travel plans designed around your unique preferences and dreams.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Luxury Getaways</h3>
+                    <p>Exclusive access to premium resorts and boutique hotels worldwide.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cultural Experiences</h3>
+                    <p>Authentic local encounters that go beyond typical tourist attractions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="paypal-section">
+            <h2>Secure Payment</h2>
+            <p>Please use the button below to make payments for your travel arrangements</p>
+            
+            <!-- PayPal Button - Replace with your own button code from PayPal -->
+            <div class="paypal-button">
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="business" value="fatousinghs@gmail.com">
+                    <input type="hidden" name="currency_code" value="GBP">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Pay Now with PayPal">
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fatou Singhateh Jula Travel Agency. All rights reserved.</p>
+        <p>Bringing the world's beauty to your doorstep</p>
+    </footer>
+</body>
+</html>
